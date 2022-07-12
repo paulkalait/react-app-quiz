@@ -1,0 +1,21 @@
+.good{
+background-color: rgb(36, 195, 0, .5);
+padding-left: 10px;
+padding-right: 10px;
+border-top: 3px solid rgb(36, 195, 0) ;
+border-bottom: 3px solid rgb(36, 195, 0);
+}
+.bad{
+    background-color: rgba(225, 0, 0, 0.5);
+    padding-left: 10px;
+    padding-right: 10px;
+    border-top: 3px solid red ;
+    border-bottom: 3px solid red;
+}
+h1{
+    font-size: 2.3em;
+}
+h3{
+    font-size: 2.4em;
+    font-weight: bolder;
+}
