@@ -1,6 +1,7 @@
 import React, { useState, useContext } from "react";
 import { Questions } from "../../Helpers/QuestionList";
 import { QuizContext } from "../../Helpers/Context";
+import './index.css'
 
 const Quiz = () => {
   //destructure the global state
@@ -26,7 +27,8 @@ const Quiz = () => {
   }
 
   return (
-    <div>
+    <div className='quiz-container'>
+    <div className="quiz">
       <h1>{Questions[currentQuestion].prompt}</h1>
       <div className="questionOptions">
         <button onClick={() => setOptionChosen("A")}>
@@ -49,6 +51,7 @@ const Quiz = () => {
       ) : (
         <button onClick={() => nextQuestion()}>Next Question</button>
       )}
+    </div>
     </div>
   );
 };
