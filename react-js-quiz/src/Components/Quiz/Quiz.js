@@ -2,8 +2,7 @@ import React, { useState, useContext } from "react";
 import { Questions } from "../../Helpers/QuestionList";
 import { QuizContext } from "../../Helpers/Context";
 import './index.css'
-import testImage from '../../../src/assets/images/reactlogo.png'
-
+import { motion} from 'framer-motion'
 const Quiz = () => {
 
   const [active, setActive] = useState({
@@ -92,25 +91,27 @@ const Quiz = () => {
       <h1>{Questions[currentQuestion].prompt}</h1>
       <div className="questionOptions">
       {console.log(Questions[currentQuestion].image)}
+      <div className="imageContainer">
       {Questions[currentQuestion].image ?(<img alt="questionImage" src={require(`../../../src/assets/images/${imageRender}`)} className="imageOutput"/>) : ""}
-        <button onClick={() => setActiveA("answerA")} name="answerA" className={active.answerA ? "active" : ""}>
+      </div>
+        <motion.button whileHover={{scale: 1.03}} onClick={() => setActiveA("answerA")} name="answerA" className={active.answerA ? "active" : ""}>
           {Questions[currentQuestion].optionA}
-        </button>
-        <button onClick={() => setActiveA("answerB")} name="answerB" className={active.answerB ? "active" : ""}>
+        </motion.button>
+        <motion.button whileHover={{scale: 1.03}} onClick={() => setActiveA("answerB")} name="answerB" className={active.answerB ? "active" : ""}>
           {Questions[currentQuestion].optionB}
-        </button>
-        <button onClick={() => setActiveA("answerC")}  name="answerC" className={active.answerC ? "active" : ""}>
+        </motion.button>
+        <motion.button whileHover={{scale: 1.03}} onClick={() => setActiveA("answerC")}  name="answerC" className={active.answerC ? "active" : ""}>
           {Questions[currentQuestion].optionC}
-        </button>
-        <button onClick={() => setActiveA("answerD")}  name="answerD" className={active.answerD ? "active" : ""}>
+        </motion.button>
+        <motion.button whileHover={{scale: 1.03}} onClick={() => setActiveA("answerD")}  name="answerD" className={active.answerD ? "active" : ""}>
           {Questions[currentQuestion].optionD}
-        </button>
+        </motion.button>
       </div>
  {/* if we are at the last question. if ccurentQuestion is = to the last question of the questions array*/}
  {currentQuestion === Questions.length - 1 ? (
   <button onClick={finishQuiz} className="finish-btn flatgreen">Finish</button>
 ) : (
-  <button onClick={() => nextQuestion()} className="quiz-btn-hover color-1">Next Question</button>
+  <button onClick={() => nextQuestion()} className="next-btn-hover color-1">Next Question</button>
 )}
     
     </div>

@@ -14,16 +14,28 @@
     margin-bottom: 10%;
     padding-bottom: 5%;
 }
+.imageContainer{
+    width: 100%;
 
-.quiz-btn-hover {
+    margin: 15px 0  15px 0;
+}
+.imageOutput{
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    width: 100%;
+    height: 100px;
+}
+
+.next-btn-hover {
     margin-top: 5%;
     width: 200px;
     font-size: 20px;
     font-weight: 600;
+    padding-top: 10px;
+    padding-bottom: 10px;
     color: #fff;
     cursor: pointer;
     margin: 20px;
-    height: 55px;
+    height: 55px !important;
     text-align:center;
     border: none;
     background-size: 300% 100%;
@@ -33,8 +45,11 @@
     -webkit-transition: all .4s ease-in-out;
     transition: all .4s ease-in-out;
 }
-
-.quiz-btn-hover:hover {
+button {
+    margin-right: 7px;
+    margin-left: 7px;
+}
+.next-btn-hover:hover {
     background-position: 100% 0;
     moz-transition: all .4s ease-in-out;
     -o-transition: all .4s ease-in-out;
@@ -42,10 +57,10 @@
     transition: all .4s ease-in-out;
 }
 
-.quiz-btn-hover:focus {
+.next-btn-hover:focus {
     outline: none;
 }
-.quiz-btn-hover.color-1 {
+.next-btn-hover.color-1 {
     background-image: linear-gradient(to right, #25aae1, #40e495, #30dd8a, #2bb673);
     box-shadow: 0 4px 15px 0 rgba(49, 196, 190, 0.75);
 }

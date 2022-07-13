@@ -7,6 +7,8 @@ const End = () => {
   const {gameState, setGameState, score, setScore} = useContext(QuizContext)
 
 
+  let scoreHalf = Math.ceil(Questions.length / 2 )
+  console.log(scoreHalf)
   const restartQuiz = () => {
     setScore(0)
     setGameState("menu")
@@ -18,10 +20,10 @@ const End = () => {
     <div className='endScreenContainer'>
     <div className='endScreen'><h1>Quiz Completed</h1>
     {console.log(score)}
-    {score < 3 ? (
-      <h3>Great Job </h3>
-    ) : <h3>Not Bad. Try again?</h3>}
-    <h3> <span className={score < 3 ? "bad" : 'good'}>{score}</span> / {Questions.length}</h3>
+    {score > scoreHalf ? (
+      <h3>Awesome Job! </h3>
+    ) : <h3>Try again?</h3>}
+    <h3> <span className={score < scoreHalf ? "bad" : 'good'}>{score}</span> / {Questions.length} correct</h3>
     <button onClick={() => restartQuiz()}>Restart</button>
     </div>
     </div>

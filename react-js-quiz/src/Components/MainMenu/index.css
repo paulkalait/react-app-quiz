@@ -5,6 +5,7 @@
 }
 .menu, .quiz, .endScreen{
     margin-top: 10%;
+    margin-bottom: 15%;
     width: 500px;
     height: 530px;
     border-radius: 10px;
@@ -24,7 +25,7 @@
 .questionOptions{
     display: flex;
     flex-direction: column;
-    width: 50%;
+    width: 100%;
 }
 .quiz button{
     margin-bottom: 3%;
@@ -38,7 +39,7 @@
 }
 .btn-hover {
     margin-top: 5%;
-   
+   height: 50px !important;
     bottom: 0;
     width: 200px;
     font-size: 20px;

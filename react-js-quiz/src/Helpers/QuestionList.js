@@ -19,7 +19,7 @@ export const Questions = [
     },
     {
         prompt: "What should the console read when the following code is run?",
-        image: "reactlogo.png",
+        image: "Deer.png",
         optionA: "Horse",
         optionB: "Cat",
         optionC: "Deer",
@@ -28,7 +28,6 @@ export const Questions = [
     },
     {
         prompt: "What can you use to handle code splitting?",
-        image: "reactlogo.png",
         optionA: "React.memo",
         optionB: "React.split",
         optionC: "React.fallback",
@@ -37,7 +36,7 @@ export const Questions = [
     },
     {
         prompt: "Given the following code, what does this React element look like?",
-        image: "reactlogo.png",
+        image: "h3.png",
         optionA: "<h3 props={null}>Hey how are you?</h3>",
         optionB: "<h3>Hey how are you?</h3>",
         optionC: "<h3 id='component'>Hey how are you?</h3>",
@@ -55,6 +54,7 @@ export const Questions = [
     },
     {
         prompt: "What do you call the message wrapped in curly braces below?",
+        images: "jsexpression.png",
         optionA: "a JS expression",
         optionB: "a JSX statement",
         optionC: "a JSX wrapper",
