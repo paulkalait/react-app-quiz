@@ -6,7 +6,7 @@
 .menu, .quiz, .endScreen{
     margin-top: 10%;
     width: 500px;
-    height: 500px;
+    height: 530px;
     border-radius: 10px;
     background-color: rgb(248, 248, 248);
     display: flex;
@@ -14,6 +14,9 @@
     justify-content: center;
     position: relative;
     box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+.menu{
+    flex-direction: column;
 }
 .quiz{
     flex-direction: column;
@@ -35,7 +38,7 @@
 }
 .btn-hover {
     margin-top: 5%;
-    position: absolute;
+   
     bottom: 0;
     width: 200px;
     font-size: 20px;
@@ -69,3 +72,69 @@
     background-image: linear-gradient(to right, #25aae1, #40e495, #30dd8a, #2bb673);
     box-shadow: 0 4px 15px 0 rgba(49, 196, 190, 0.75);
 }
+
+
+
+.container{
+    width:250px;
+    height:250px;
+    margin:20px auto 0 auto;
+
+
+    display:flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .react-logo{
+    display: inline-block;
+    border-radius:50%;
+    border:10px solid #00d8ff;
+
+    animation-name:rotate;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+
+  }
+
+  .react-logo , .react-logo:before , .react-logo:after{
+    position:absolute;
+    display: inline-block;
+    width:200px;
+    height:70px;
+    border-radius:50%;
+    border:10px solid #00d8ff;
+  }
+
+  .nucleo , .react-logo , .react-logo:before , .react-logo:after {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .nucleo{
+    width:40px;
+    height:40px;
+    border-radius:100%;
+ 
+  }
+
+  .react-logo:before , .react-logo:after{
+    content:"";
+  }
+
+  .react-logo:after{
+    transform:rotate(-57deg);
+  }
+
+  .react-logo:before{
+    transform:rotate(57deg);
+  }
+  
+  @keyframes rotate{
+
+    100%{
+      transform:rotate(360deg);
+    }
+  }
