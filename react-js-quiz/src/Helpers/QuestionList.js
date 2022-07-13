@@ -1,3 +1,5 @@
+
+
 export const Questions = [
     {
         prompt: "Who created React?",
@@ -17,6 +19,7 @@ export const Questions = [
     },
     {
         prompt: "What can you use to handle code splitting?",
+        image: "../../../src/assets/images/reactlogo.png",
         optionA: "React.memo",
         optionB: "React.split",
         optionC: "React.fallback",

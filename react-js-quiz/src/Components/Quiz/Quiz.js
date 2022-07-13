@@ -2,6 +2,7 @@ import React, { useState, useContext } from "react";
 import { Questions } from "../../Helpers/QuestionList";
 import { QuizContext } from "../../Helpers/Context";
 import './index.css'
+import testImage from '../../../src/assets/images/reactlogo.png'
 
 const Quiz = () => {
 
@@ -85,6 +86,8 @@ const Quiz = () => {
     <div className="quiz">
       <h1>{Questions[currentQuestion].prompt}</h1>
       <div className="questionOptions">
+      {console.log(Questions[currentQuestion].image)}
+      <img alt="questionImage" src={Questions[currentQuestion].image} />
         <button onClick={() => setActiveA("answerA")} name="answerA" className={active.answerA ? "active" : ""}>
           {Questions[currentQuestion].optionA}
         </button>
