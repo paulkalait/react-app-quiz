@@ -34,6 +34,7 @@
     border: solid 1px white;
 }
 .btn-hover {
+    margin-top: 5%;
     position: absolute;
     bottom: 0;
     width: 200px;
