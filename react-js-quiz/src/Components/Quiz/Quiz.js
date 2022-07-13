@@ -78,16 +78,21 @@ const Quiz = () => {
         setOptionChosen("D")
     }
 
-   
+    
   }
 
+
+
+ let imageRender = Questions[currentQuestion].image
+ console.log(imageRender)
+  //src={`../../../src/assets/images/${Questions[currentQuestion].image}`}
   return (
     <div className='quiz-container'>
     <div className="quiz">
       <h1>{Questions[currentQuestion].prompt}</h1>
       <div className="questionOptions">
       {console.log(Questions[currentQuestion].image)}
-      <img alt="questionImage" src={Questions[currentQuestion].image} />
+      {Questions[currentQuestion].image ?(<img alt="questionImage" src={require(`../../../src/assets/images/${imageRender}`)} className="imageOutput"/>) : ""}
         <button onClick={() => setActiveA("answerA")} name="answerA" className={active.answerA ? "active" : ""}>
           {Questions[currentQuestion].optionA}
         </button>
