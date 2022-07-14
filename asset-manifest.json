@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/react-quiz/static/css/main.9d70836e.css",
-    "main.js": "/react-quiz/static/js/main.75469509.js",
+    "main.css": "/react-quiz/static/css/main.6dd0b905.css",
+    "main.js": "/react-quiz/static/js/main.da2df488.js",
     "static/js/787.24ebab2c.chunk.js": "/react-quiz/static/js/787.24ebab2c.chunk.js",
     "static/media/jsexpression.png": "/react-quiz/static/media/jsexpression.a90bbdee2a9eb3c1298a.png",
     "static/media/reactlogo.png": "/react-quiz/static/media/reactlogo.ef20e673b9282f8f30fd.png",
     "static/media/Deer.png": "/react-quiz/static/media/Deer.3cdabcdb16c679df08be.png",
     "index.html": "/react-quiz/index.html",
-    "main.9d70836e.css.map": "/react-quiz/static/css/main.9d70836e.css.map",
-    "main.75469509.js.map": "/react-quiz/static/js/main.75469509.js.map",
+    "main.6dd0b905.css.map": "/react-quiz/static/css/main.6dd0b905.css.map",
+    "main.da2df488.js.map": "/react-quiz/static/js/main.da2df488.js.map",
     "787.24ebab2c.chunk.js.map": "/react-quiz/static/js/787.24ebab2c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.9d70836e.css",
-    "static/js/main.75469509.js"
+    "static/css/main.6dd0b905.css",
+    "static/js/main.da2df488.js"
   ]
 }
