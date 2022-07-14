@@ -4,7 +4,7 @@ import './index.css'
 const Header = () => {
   return (
   <header >
-   <a href='/'><h1>React Quiz</h1></a> 
+<h1>React Quiz</h1>
 
   </header>
   )

@@ -28,3 +28,9 @@ h3{
     font-size: 2.4em;
     font-weight: bolder;
 }
+@media screen and (max-width: 770px) {
+.endScreen{
+    margin-left: 4%;
+    margin-right: 4%;  
+}
+}

@@ -5,7 +5,7 @@
 }
 .menu, .quiz, .endScreen{
     margin-top: 10%;
-    margin-bottom: 15%;
+    margin-bottom: 12%;
     width: 500px;
     height: 530px;
     border-radius: 10px;
@@ -137,5 +137,13 @@
 
     100%{
       transform:rotate(360deg);
+    }
+  }
+  @media screen and (max-width: 770px) {
+
+    .menu{
+      margin-right: 4%;
+      margin-left: 4%;
+      width: 100%;
     }
   }

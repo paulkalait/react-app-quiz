@@ -24,7 +24,7 @@ const End = () => {
       <h3>Awesome Job! </h3>
     ) : <h3>Try again?</h3>}
     <h3> <span className={score < scoreHalf ? "bad" : 'good'}>{score}</span> / {Questions.length} correct</h3>
-    <button onClick={() => restartQuiz()}>Restart</button>
+    <button className='btn-hover color-1' onClick={() => restartQuiz()}>Restart</button>
     </div>
     </div>
   )

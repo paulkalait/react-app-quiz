@@ -5,7 +5,7 @@ header{
     /* position: absolute;
     top: 0; */
     display: flex;
-    align-items: center;
+    /* align-items: center; */
     border-bottom: 5px solid;
     border-image: linear-gradient(to bottom right, #b827fc 0%, #2c90fc 25%, #b8fd33 50%, #fec837 75%, #fd1892 100%);
   border-image-slice: 1;
@@ -16,4 +16,11 @@ header h1{
     font-family: 'Nanum Gothic Coding', monospace;
     font-size: 2.3rem;
     cursor: pointer;
+}
+
+@media screen and (max-width: 770px) {
+ header{
+  text-align: center !important;
+  justify-content: center;
+ }
 }
