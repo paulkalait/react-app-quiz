@@ -95,6 +95,7 @@ button {
 
 @media screen and (max-width: 770px) {
     .quiz{
+        padding-top: 20%;
         margin-top: 30%;
         padding-bottom: 23%;
         margin-left: 4%;
